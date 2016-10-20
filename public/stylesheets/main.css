@@ -1,19 +1,31 @@
 body{
 	margin: 0;	
+	padding: 0;
+	min-height: 100%;
+	width: 100%;
+}
+
+h2{
+	margin: 0 0 5px 0;
+	font-size: 18px;	
 }
 
 header{
 	background: blue;
 	height: 70px;
 	width: 100%;
-	position: absolute;
-	top: 0;
+}
+
+section, header, main, footer{
+	display: block;	
 }
 
 #fig-logo{
 	height: inherit;
-	width: auto;
-	margin: 0 0 0 10%;
+	width: 20%;
+	margin: 0;
+	padding: 0 0 0 10%;
+	float: left;
 }
 
 #logo{
@@ -22,11 +34,11 @@ header{
 }
 
 nav{
-	width: auto;
+	width: 60%;
 	float: left;
-	position: inherit;
-	bottom: 15px;
-	right: 5%;
+	margin: 26px 0 0 0;
+	padding-right: 10%;
+	text-align: right;
 }
 
 nav a {
@@ -36,29 +48,17 @@ nav a {
 	padding: 12px 30px;
 }
 
-.gauche{
-	float: left;
-}
-
-.droite{
-	float: right;
-}
-
-
-.clearer{
-	clear: both;	
+.inline{
+	display: inline-block;
 }
 
 main{
 	width: 70%;
-	margin: auto;
-	position: absolute;
-	top: 70px;
-	right: 15%;
+	margin: 25px auto;
 }
 
 #fil-arianne{
-	margin: 25px 0 15px 0;
+	margin: 0px 0 15px 0;
 }
 
 #fil-arianne a{
@@ -72,7 +72,7 @@ main{
 	padding: 0 10px 0 0;
 }
 
-#bloc-principal{
+#bloc-principal, #bas{
 	padding: 15px;
 	background: blue;
 	color: white;	
@@ -86,8 +86,12 @@ main{
 }
 
 .moitie{
-	width: 48%;
-	border: 2px solid #666;
+	width: calc((100% - 2%)/2);
+	height: inherit;
+}
+
+.moitieCentre{
+	width: calc((100% - 2% - 12px)/2);
 }
 
 .moitie img{
@@ -96,21 +100,21 @@ main{
 	height: 144px;	
 }
 
-#gauche{
+#inlineDroit, #inlineGauche{
+	border: 2px solid #666;
+}
+
+#inlineDroit{
 	margin: 0 1% 0 0;
 }
 
-#droite{
+#inlineGauche{
 	margin: 0 0 0 1%;
 }
 
-footer{
-	background: white;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    border-top: 2px solid grey;
+article{
+	margin: 0;
+	padding: 3px;
 }
 
 #active{
@@ -118,9 +122,24 @@ footer{
 }
 
 #centre, #bas{
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
-#bas{
-	background:blue;
+#centre, .centre{
+	height: 200px;
 }
+
+footer{
+	background: white;
+    width: 100%;
+    min-height: 50px;
+    border-top: 2px solid grey;
+}
+
+details{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+
