@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    </head>
+    
+    <body>
+    	<header>
+    		<figure id="fig-logo">
+				<img id="logo" src="../public/images/logo.png" alt="logo" title="logo" >
+			</figure>
+    		<nav>
+    			<a href="#">Accueil</a>
+    			<a href="#" id="active" >Présentation</a>
+    			<a href="#">Contact</a>
+    		</nav>
+    	</header>
+    	<main>
+    		<section id="fil-arianne">
+    			<a href="#">Accueil</a> / <a href="#">Présentation</a>
+    		</section>
+    		<section id="bloc-principal">
+    			<h1>Titre de la page</h1>
+    			<p>
+    				Per hoc minui studium suum existimans Paulus, ut erat in conplicandis negotiis artifex dirus, unde ei Catenae inditum est cognomentum, 
+    				vicarium ipsum eos quibus praeerat adhuc defensantem ad sortem periculorum communium traxit. et instabat ut eum quoque cum tribunis et 
+    				aliis pluribus ad comitatum imperatoris vinctum perduceret: quo percitus ille exitio urgente abrupto ferro eundem adoritur Paulum. et 
+    				quia languente dextera, letaliter ferire non potuit, iam districtum mucronem in proprium latus inpegit. hocque deformi genere mortis 
+    				excessit e vita iustissimus rector ausus miserabiles casus levare multorum.
+    			</p>
+    			<input id="click" type="submit" value="Click" />
+    		</section>
+    		<section id="centre">
+    			<figure class="gauche moitie" id="gauche">
+    				<img src="../public/images/tortue1.jpeg">
+    				<figcaption>
+    					Per hoc minui studium suum existimans Paulus, ut erat in conplicandis negotiis artifex dirus, unde ei Catenae inditum est cognomentum, 
+    					vicarium ipsum eos quibus praeerat adhuc defensantem ad sortem periculorum com
+    				</figcaption>
+    			</figure>
+    			<figure class="droite moitie" id="droite">
+    				<img src="../public/images/tortue2.jpeg">
+    				<figcaption>
+    					pluribus ad comitatum imperatoris vinctum perduceret: quo percitus ille exitio urgente abrupto ferro eundem adoritur Paulum. et 
+    					quia languente dextera, letaliter ferire non potuit, iam districtum mucronem in proprium latus inpegit. 
+    				</figcaption>
+    			</figure>
+    			<div class="clearer"></div>
+    		</section>
+    		<section id="bas">
+    			<p style="">coucou</p>
+    		</section>
+    	</main>
+    	<footer>
+    	
+    	</footer>
+    	    
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        #{get 'moreScripts' /}
+    </body>
+</html>

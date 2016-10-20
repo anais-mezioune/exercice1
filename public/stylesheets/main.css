@@ -1,0 +1,126 @@
+body{
+	margin: 0;	
+}
+
+header{
+	background: blue;
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#fig-logo{
+	height: inherit;
+	width: auto;
+	margin: 0 0 0 10%;
+}
+
+#logo{
+	height: inherit;
+	width: 72px;
+}
+
+nav{
+	width: auto;
+	float: left;
+	position: inherit;
+	bottom: 15px;
+	right: 5%;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	padding: 12px 30px;
+}
+
+.gauche{
+	float: left;
+}
+
+.droite{
+	float: right;
+}
+
+
+.clearer{
+	clear: both;	
+}
+
+main{
+	width: 70%;
+	margin: auto;
+	position: absolute;
+	top: 70px;
+	right: 15%;
+}
+
+#fil-arianne{
+	margin: 25px 0 15px 0;
+}
+
+#fil-arianne a{
+	color: black;
+	font-size: 15px;
+	padding: 0 10px;
+	font-weight: bold;	
+}
+
+#fil-arianne a:first-child{	
+	padding: 0 10px 0 0;
+}
+
+#bloc-principal{
+	padding: 15px;
+	background: blue;
+	color: white;	
+}
+
+#click{
+	background: black;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;	
+}
+
+.moitie{
+	width: 48%;
+	border: 2px solid #666;
+}
+
+.moitie img{
+	width: 50%;
+	float: left;
+	height: 144px;	
+}
+
+#gauche{
+	margin: 0 1% 0 0;
+}
+
+#droite{
+	margin: 0 0 0 1%;
+}
+
+footer{
+	background: white;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid grey;
+}
+
+#active{
+	border-bottom: 5px solid white;
+}
+
+#centre, #bas{
+	margin-top: 20px;
+}
+
+#bas{
+	background:blue;
+}
